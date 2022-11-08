@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tochkasbora.HobbyActivity"
+    android:background="@color/white">
+    <ImageButton
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/exit_button"
+        android:padding="1dp"
+        android:scaleType="fitXY"
+        android:onClick="BackToGreeting"
+        tools:ignore="OnClick" />
+    <TextView
+        android:id="@+id/TitleTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Выбери свои"
+        android:textColor="@color/black"
+        android:fontFamily="@font/geometriamedium"
+        android:textSize="32sp" />
+    <TextView
+        android:id="@+id/TitleTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleTxt1"
+        android:text="Увлечения"
+        android:textColor="@color/black"
+        android:fontFamily="@font/geometriamedium"
+        android:textSize="32sp"
+        />
+
+
+    <EditText
+        android:id="@+id/FindHobby"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TitleTxt2"
+        android:background="@drawable/frames"
+        android:hint="Найти увлечение..."
+        android:textColor="#ececec"
+        android:paddingLeft="25dp"
+        android:textSize="17sp"
+
+        android:textAllCaps="false"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/EducationButton"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FindHobby"
+        android:text="Учеба"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_option"
+        android:backgroundTint="#CD9BFF"
+        android:stateListAnimator="@null"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CommunicationButton"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FindHobby"
+        android:text="Общение"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_option"
+        android:backgroundTint="#B9EBE5"
+        android:stateListAnimator="@null"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SportButton"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EducationButton"
+        android:text="Спорт"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_option"
+        android:backgroundTint="#B4F894"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SelfDevelopmentButton"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SportButton"
+        android:text="Саморазвитие"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_option"
+        android:backgroundTint="#FC8A8A"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LanguagesButton"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CommunicationButton"
+        android:text="Изучение языка"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_option"
+        android:backgroundTint="#A7A5E7"
+        android:paddingVertical="1dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BusinessButton"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LanguagesButton"
+        android:text="Бизнес"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_option"
+        android:backgroundTint="#F5C1E4"
+        android:stateListAnimator="@null"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/framesmaincolor"
+        app:layout_constraintTop_toBottomOf="@+id/BusinessButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Продолжить"
+        android:onClick="StartToHome"
+        android:textColor="@color/maincolor"
+        android:stateListAnimator="@null"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+
+        tools:ignore="OnClick" />
+</androidx.constraintlayout.widget.ConstraintLayout>
